@@ -20,6 +20,10 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  display: flex;
+  padding: 15px;
+  gap: 15px;
 }
 
 .icon {
@@ -33,6 +37,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  flex-shrink: 0;
 }
 
 .close-button {
@@ -48,6 +54,8 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+
+  flex-shrink: 0;
 }
 
 button {
@@ -66,4 +74,27 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+/* This is just me playing with a new concept */
+@media (max-width: 255px) {
+  button {
+    margin: 5px;
+    width: 100%;
+  }
 }
